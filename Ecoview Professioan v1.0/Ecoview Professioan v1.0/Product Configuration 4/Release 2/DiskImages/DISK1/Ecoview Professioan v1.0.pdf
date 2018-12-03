@@ -1,0 +1,21 @@
+[PDF]
+Version = 2.0
+
+[Package Definition]
+Name = Ecoview Professioan v1.0
+Version = 1.0.0
+Publisher = Ecoview
+Language = English
+Programs = Setup
+MifName = Ecoview Professioan v1.0
+MifVersion = 1.0.0
+MifPublisher = Ecoview
+
+[Setup]
+Name = Automated Minimum Installation
+CommandLine = setup.exe /s
+SupportedClients = Win 9x, Win NT (i386)
+UserInputRequired = False
+RemoveProgram = True
+UnInstallKey = {05B91C4B-A026-4AA4-870C-118C55B70E37}
+

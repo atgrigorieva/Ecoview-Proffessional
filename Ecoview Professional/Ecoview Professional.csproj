@@ -1,0 +1,407 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2960FE71-5AC1-47AF-9F6B-3BCD83482291}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ecoview_Professional</RootNamespace>
+    <AssemblyName>Ecoview Professional</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>F:\Ecoview_Home_Version\Ecoview-Proffessional\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Analys200.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>959E6F57576501ABEAFAE4434EAEA183FA1A8169</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>EcoviewProfessional.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>EcoviewProfessional.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GuardantDotNetApi, Version=5.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\GuardantDotNetApi.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>iTextSharp\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\Microsoft.Office.Interop.Excel\15.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.OLE.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC\Microsoft.VisualStudio.OLE.Interop\7.1.40304.0__b03f5f7f11d50a3a\Microsoft.VisualStudio.OLE.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Analis.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Analis.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Calibrovka.cs" />
+    <Compile Include="Conection.cs" />
+    <Compile Include="CreateDimension.cs" />
+    <Compile Include="Decriptor64.cs" />
+    <Compile Include="DecriptorFile.cs" />
+    <Compile Include="DecriptorPribor.cs" />
+    <Compile Include="Ecoview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ecoview.Designer.cs">
+      <DependentUpon>Ecoview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EncriptorFileBase64.cs" />
+    <Compile Include="EncriptorPribor.cs" />
+    <Compile Include="ExcelResim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExcelResim.Designer.cs">
+      <DependentUpon>ExcelResim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExportExcelAll.cs" />
+    <Compile Include="ExportPDFDocALL.cs" />
+    <Compile Include="FirstStart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FirstStart.Designer.cs">
+      <DependentUpon>FirstStart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FotometrScan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FotometrScan.Designer.cs">
+      <DependentUpon>FotometrScan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelpDesk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelpDesk.Designer.cs">
+      <DependentUpon>HelpDesk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputBox.Designer.cs">
+      <DependentUpon>InputBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Izmerenie.cs" />
+    <Compile Include="IzmerenieFR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IzmerenieFR.Designer.cs">
+      <DependentUpon>IzmerenieFR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KineticaScan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KineticaScan.Designer.cs">
+      <DependentUpon>KineticaScan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kvadratichnaya.cs" />
+    <Compile Include="Lineinaya.cs" />
+    <Compile Include="Lineinaya0.cs" />
+    <Compile Include="LogoForm.cs" />
+    <Compile Include="LogoForm2.cs" />
+    <Compile Include="ModificateGrad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificateGrad.Designer.cs">
+      <DependentUpon>ModificateGrad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificateIzmer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificateIzmer.Designer.cs">
+      <DependentUpon>ModificateIzmer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MultiWave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MultiWave.Designer.cs">
+      <DependentUpon>MultiWave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewGraduirovka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewGraduirovka.Designer.cs">
+      <DependentUpon>NewGraduirovka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewIzmerenie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewIzmerenie.Designer.cs">
+      <DependentUpon>NewIzmerenie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewWalve.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewWalve.Designer.cs">
+      <DependentUpon>NewWalve.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpenAll.cs" />
+    <Compile Include="PortClose.cs" />
+    <Compile Include="PriborInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PriborInformation.Designer.cs">
+      <DependentUpon>PriborInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print.cs" />
+    <Compile Include="PrintPreviewDialogSelectPrinter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="ProgrammVersion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgrammVersion.Designer.cs">
+      <DependentUpon>ProgrammVersion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RD.cs" />
+    <Compile Include="ReadFilePribor.cs" />
+    <Compile Include="Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registration.Designer.cs">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReviewsWishes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReviewsWishes.Designer.cs">
+      <DependentUpon>ReviewsWishes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SAGE.cs" />
+    <Compile Include="SAGEScan.cs" />
+    <Compile Include="SaveAll.cs" />
+    <Compile Include="SearchGuardant.cs" />
+    <Compile Include="Select.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Select.Designer.cs">
+      <DependentUpon>Select.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingPort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingPort.Designer.cs">
+      <DependentUpon>SettingPort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingWL.cs" />
+    <Compile Include="SW.cs" />
+    <Compile Include="SW_MultiScan.cs" />
+    <Compile Include="TotalInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TotalInformation.Designer.cs">
+      <DependentUpon>TotalInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TotalInformationResults.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TotalInformationResults.Designer.cs">
+      <DependentUpon>TotalInformationResults.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Analis.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Analis.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ecoview.resx">
+      <DependentUpon>Ecoview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExcelResim.resx">
+      <DependentUpon>ExcelResim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FirstStart.resx">
+      <DependentUpon>FirstStart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FotometrScan.resx">
+      <DependentUpon>FotometrScan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpDesk.resx">
+      <DependentUpon>HelpDesk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputBox.resx">
+      <DependentUpon>InputBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IzmerenieFR.resx">
+      <DependentUpon>IzmerenieFR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KineticaScan.resx">
+      <DependentUpon>KineticaScan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificateGrad.resx">
+      <DependentUpon>ModificateGrad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificateIzmer.resx">
+      <DependentUpon>ModificateIzmer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultiWave.resx">
+      <DependentUpon>MultiWave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewGraduirovka.resx">
+      <DependentUpon>NewGraduirovka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewIzmerenie.resx">
+      <DependentUpon>NewIzmerenie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewWalve.resx">
+      <DependentUpon>NewWalve.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PriborInformation.resx">
+      <DependentUpon>PriborInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintPreviewDialogSelectPrinter.resx">
+      <DependentUpon>PrintPreviewDialogSelectPrinter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgrammVersion.resx">
+      <DependentUpon>ProgrammVersion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Registration.resx">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReviewsWishes.resx">
+      <DependentUpon>ReviewsWishes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Select.resx">
+      <DependentUpon>Select.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingPort.resx">
+      <DependentUpon>SettingPort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TotalInformation.resx">
+      <DependentUpon>TotalInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TotalInformationResults.resx">
+      <DependentUpon>TotalInformationResults.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="EcoviewProfessional.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Analys200.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
